@@ -42,3 +42,4 @@ if __name__ == "__main__":
         print(f"Target value {target} found at index: {result+1}")
     else:
         print(f"Target value {target} not found in the list")
+
