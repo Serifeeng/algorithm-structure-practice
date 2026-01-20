@@ -1,45 +1,41 @@
+
 def binary_search(arr, target):
+
     """
     Performs binary search on a sorted list.
-
-    Parameters:
     arr (list): Sorted list of elements
     target: Element to search for
-
-    Returns:
     int: Index of target if found, otherwise -1
     """
 
-    left= 0
-    right= len(arr) - 1
+    left=0
+    right=len(arr)-1
 
-    while left <= right:
-        mid = (left + right) // 2
+    while left<=right:
+        mid= (right+left)//2
 
         # If target is found at mid
-        if arr[mid] == target:
+        if arr[mid]==target:
             return mid
-
+        
         # If target is greater, ignore left half
-        elif arr[mid] < target:
-            left= mid + 1
+        if arr[mid]< target:
+            left=mid+1
 
         # If target is smaller, ignore right half
         else:
-            right= mid - 1
+            right= mid-1
 
     # Target not found
     return -1
 
 
-if __name__ == "__main__":
-    numbers=[1, 3, 5, 7, 9, 11, 13, 15]
-    target=13
+if __name__=="__main__":
+    numbers=[1, 3, 5, 7, 9, 11, 13, 15]   
+    target=15
 
-    result = binary_search(numbers, target)
-
-    if result != -1:
-        print(f"Target value {target} found at index: {result+1}")
+    result=binary_search(numbers,target) 
+    if result!=-1:
+        print(f"target value {target} found at index {result+1}")
     else:
-        print(f"Target value {target} not found in the list")
-
+        print(f"target value {target} not found in the list")
