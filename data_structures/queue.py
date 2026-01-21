@@ -44,3 +44,4 @@ if __name__ == "__main__":
 
     print("Dequeued:", queue.dequeue())
     print("Front element after dequeue:", queue.peek())
+
