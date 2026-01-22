@@ -39,3 +39,12 @@ if __name__=="__main__":
         print(f"target value {target} found at index {result+1}")
     else:
         print(f"target value {target} not found in the list")
+
+
+# Works only on sorted arrays
+# Uses an iterative (loop-based) approach
+# Repeatedly divides the search range into half
+# Time Complexity: O(log n)
+# Space Complexity: O(1) since no recursion is used
+# More memory-efficient than recursive version
+# Commonly preferred in production systems
