@@ -14,3 +14,14 @@ contains a value and a reference to the next node in the sequence.
 - Efficient insertions and deletions
 - Sequential access only
 
+### Time Complexity
+
+| Operation | Complexity |
+|----------|------------|
+| Access   | O(n)       |
+| Search   | O(n)       |
+| Insert  | O(1)       |
+| Delete  | O(1)       |
+
+### Space Complexity
+O(n)
